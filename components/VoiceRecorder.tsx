@@ -4,12 +4,25 @@ import { useState, useRef, useEffect } from 'react';
 import { Mic, MicOff, Volume2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-// TypeScript declarations for Web Speech API
+
+// Minimal fallback types for Web Speech API (for build environments)
 declare global {
+  // Only declare if not already present
+  // @ts-ignore
+  var SpeechRecognition: any;
+  // @ts-ignore
+  var webkitSpeechRecognition: any;
+  // @ts-ignore
   interface Window {
-    SpeechRecognition: typeof SpeechRecognition;
-    webkitSpeechRecognition: typeof SpeechRecognition;
+    SpeechRecognition: any;
+    webkitSpeechRecognition: any;
   }
+  // @ts-ignore
+  type SpeechRecognition = any;
+  // @ts-ignore
+  type SpeechRecognitionEvent = any;
+  // @ts-ignore
+  type SpeechRecognitionErrorEvent = any;
 }
 
 interface VoiceRecorderProps {
