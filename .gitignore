@@ -1,0 +1,88 @@
+# Environment variables
+.env
+.env.local
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv.bak/
+
+# IDE
+.vscode/
+# Logs
+# Node modules
+node_modules/
+
+# Build output
+.next/
+*.tmp
+*.temp
+
+
+# Logs
+npm-debug.log*
+
+
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv
+venv/
+env/
+
+# Firebase credentials
+firebase-service-account.json
+
+# VSCode
+.vscode/
+
+# Misc
+*.log
+*.sqlite3
+*.db
+
+# Test coverage
+coverage/
+
+# Local config
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore secrets and sensitive files
+*.secret*
+
+# Ignore deployment and temp files
+*.swp
+*.swo
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore package lock files (optional, if you use yarn or pnpm)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+
